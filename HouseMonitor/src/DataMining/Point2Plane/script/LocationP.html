@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>Location</title>
+    <!-- <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" /> -->
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+    <style>
+        html,
+        body,
+        #container {
+            height: 100%;
+            width: 100%;
+        }
+
+        .amap-icon img {
+            width: 25px;
+            height: 34px;
+        }
+
+        .amap-marker-label {
+            border: 0;
+            background-color: transparent;
+        }
+
+        .info {
+            position: relative;
+            top: 0;
+            right: 0;
+            min-width: 0;
+            color: deeppink;
+            background-color: aliceblue;
+            font-weight: bolder;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script type="text/javascript"
+        src="https://webapi.amap.com/maps?v=1.4.15&key=fb3827545384a65e84ebae1e6105142b"></script>
+    <script type="text/javascript">
+        // tianfu square
+        var map = new AMap.Map('container', {
+            resizeEnable: true,
+            center: [104.065861, 30.657401],
+            zoom: 13,
+            mapStyle: "amap://styles/whitesmoke"
+        });
+        /////////////////////////////////////////
+        // chao
+        var marker_1 = new AMap.Marker({
+            position: [104.133687, 30.477561],
+            icon: 'https://img-blog.csdnimg.cn/20210625163436476.png',
+            offset: new AMap.Pixel(-13, -30)
+        });
+
+        marker_1.setMap(map);
+
+        marker_1.setTitle('唐超');
+
+        marker_1.setLabel({
+            offset: new AMap.Pixel(0, 5), //
+            content: "<div class='info'>超哥</div>", //
+            direction: 'right' //
+        });
+
+        /////////////////////////////////////////
+        // xian
+        var marker_2 = new AMap.Marker({
+            position: [104.031981, 30.637178],
+            // pic-2
+            icon: 'https://img-blog.csdnimg.cn/2021062516345124.png',
+            offset: new AMap.Pixel(0, 5)
+        });
+
+        marker_2.setMap(map);
+        marker_2.setTitle('曾绍贤');
+
+        marker_2.setLabel({
+            offset: new AMap.Pixel(0, 5),
+            content: "<div class='info'>曾绍贤</div>",
+            direction: 'right'
+        });
+
+        /////////////////////////////////////////
+        // me
+        var marker_3 = new AMap.Marker({
+            position: [103.963466, 30.673621],
+            // pic-2
+            icon: 'https://img-blog.csdnimg.cn/2021062516350154.png',
+            offset: new AMap.Pixel(-13, -30)
+        });
+
+
+        marker_3.setMap(map);
+        marker_3.setTitle('h');
+
+        marker_3.setLabel({
+            offset: new AMap.Pixel(0, 5),
+            content: "<div class='info'>h</div>",
+            direction: 'right'
+        });
+
+        /////////////////////////////////////////
+        // hei
+        var marker_4 = new AMap.Marker({
+            position: [104.085284, 30.549026],
+            // pic-2
+            icon: 'https://img-blog.csdnimg.cn/2021062516350545.png',
+            offset: new AMap.Pixel(-13, -30)
+        });
+
+
+        marker_4.setMap(map);
+        marker_4.setTitle('阿黑');
+
+        marker_4.setLabel({
+            offset: new AMap.Pixel(0, 5),
+            content: "<div class='info'>阿黑</div>",
+            direction: 'right'
+        });
+
+        /////////////////////////////////////////
+        // wang ting
+        var marker_5 = new AMap.Marker({
+            position: [104.048194, 30.527183],
+            // pic-2
+            icon: 'https://img-blog.csdnimg.cn/20210625163508903.png',
+            offset: new AMap.Pixel(-13, -30)
+        });
+
+
+        marker_5.setMap(map);
+        marker_5.setTitle('王婷');
+
+        marker_5.setLabel({
+            offset: new AMap.Pixel(0, 5),
+            content: "<div class='info'>王婷</div>",
+            direction: 'right'
+        });
+
+        /////////////////////////////////////////
+        // cong
+        var marker_6 = new AMap.Marker({
+            position: [104.085515, 30.682858],
+            // pic-2
+            icon: 'https://img-blog.csdnimg.cn/20210628104238539.png',
+            offset: new AMap.Pixel(-13, -30)
+        });
+
+
+        marker_6.setMap(map);
+        marker_6.setTitle('叶建聪');
+
+        marker_6.setLabel({
+            offset: new AMap.Pixel(0, 5),
+            content: "<div class='info'>叶建聪</div>",
+            direction: 'right'
+        });
+
+        /////////////////////////////////////////
+        // chi
+        var marker_7 = new AMap.Marker({
+            position: [104.050961, 30.560317],
+            // pic-2
+            icon: 'https://img-blog.csdnimg.cn/20210628104238539.png',
+            offset: new AMap.Pixel(-13, -30)
+        });
+
+
+        marker_7.setMap(map);
+        marker_7.setTitle('小驰');
+
+        marker_7.setLabel({
+            offset: new AMap.Pixel(0, 5),
+            content: "<div class='info'>小驰</div>",
+            direction: 'left'
+        });
+
+        /////////////////////////////////////////
+        // wenting
+        var marker_8 = new AMap.Marker({
+            position: [103.953339, 30.675731],
+            // pic-2
+            icon: 'https://img-blog.csdnimg.cn/20210628104324271.png',
+            offset: new AMap.Pixel(-13, -30)
+        });
+
+
+        marker_8.setMap(map);
+        marker_8.setTitle('文婷');
+
+        marker_8.setLabel({
+            offset: new AMap.Pixel(0, 5),
+            content: "<div class='info'>文婷</div>",
+            direction: 'left'
+        });
+
+        ////////////////////////////////////
+        // 集结点
+        var center = [104.032822, 30.631343];
+        var circleMarker = new AMap.CircleMarker({
+            center: center,
+            radius: 20,//3D视图下，CircleMarker半径不要超过64px
+            strokeColor: 'white',
+            strokeWeight: 2,
+            strokeOpacity: 0.5,
+            fillColor: 'rgba(0,0,255,1)',
+            fillOpacity: 0.5,
+            zIndex: 10,
+            bubble: true,
+            cursor: 'pointer',
+            clickable: true
+        });
+        circleMarker.setMap(map);
+    </script>
+</body>
+
+</html>
