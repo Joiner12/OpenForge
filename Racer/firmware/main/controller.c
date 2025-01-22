@@ -78,6 +78,7 @@ void command_set_game_status(uint32_t status)
     }
 }
 
+// stop motor A&B
 void command_timer_callback(TimerHandle_t xTimer)
 {
     ESP_LOGI("controller", "Timer expired, stopping motors");
